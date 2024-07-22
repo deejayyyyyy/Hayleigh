@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Hayleigh</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #fbeae7;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .link {
+            font-size: 1.5em;
+            color: #b23a48;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: scale(0.8);
+            transition: opacity 1s ease, transform 1s ease;
+            display: none;
+        }
+        .container.visible {
+            display: block;
+            opacity: 1;
+            transform: scale(1);
+        }
+        .header {
+            text-align: center;
+            font-size: 2em;
+            color: #b23a48;
+        }
+        .content {
+            margin-top: 20px;
+            line-height: 1.6;
+        }
+        .signature {
+            margin-top: 30px;
+            text-align: right;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <a class="link" href="#" onclick="showLetter(event)">Click here for a surprise</a>
+    <div class="container" id="love-letter">
+        <div class="header">My Dearest Love,</div>
+        <div class="content">
+            <p>
+                From the moment I met you, I knew my life would never be the same. Your smile brightens my darkest days, and your beautiful face and comfort soothes my deepest fears. I cherish each second as if it were our last.
+            </p>
+            <p>
+                You are my confidant, my best friend, and the love of my life. Your kindness, strength, and beauty inspire me to be a better person, and I am endlessly grateful for the love we share. When I look into your eyes, I see a future filled with joy, laughter, and endless possibilities.
+            </p>
+            <p>
+                I promise to stand by your side through thick and thin, to support you in all your endeavors, and to love you unconditionally for the rest of my days. You are my heart, my soul, and my everything.
+            </p>
+            <p>
+                Forever and always.
+            </p>
+            <p>
+                Thank you for always being honest with me,
+            </p>
+            <p>
+                I really really appreciate you, ito lang yung paraan para maexpress ko yung love at nararamdaman ko para sa'yo. Alam ko na hindi ako perfect guy, but trust me i'm trying.
+            </p>
+            <p>
+                I want us to be official, but i'll wait for you hanggang sa maging ready kana. I want to court you, I want to give you all the love in this world, i'll do anything and i'll prove it to you, my love.
+            </p>
+            <p>
+                If I could give you one thing in life, I would give you the ability to see yourself through my eyes. Because only then you would realize how special you are to me.     
+            </p>
+            <p>
+                I had never met a soul who could speak my language, until there was you, you are fluent to me. At the end of the day I want it to be you and me, I want your early mornings, I want your late nights, I want you on your good days, even more on your bad.
+            </p>
+            <p>
+                I love you with knowing how or when or from where, I love you simply without problems or pride, I love you in this way because I do not know any other way of loving but this in which there is no I or You, so intimate that your hand upon my chest is my hand, so intimate that when i fall asleep your eyes close.
+            </p>
+            <p>
+                In our time together you claimed a special place in my heart, one I will carry with me forever and that no one can ever replace to the world you may be one person but to one person, you may be the world.
+            </p>
+            <div class="signature">[Daniell]</div>
+        </div>
+    </div>
+    <script>
+        function showLetter(event) {
+            event.preventDefault();
+            var letterContainer = document.getElementById('love-letter');
+            letterContainer.classList.add('visible');
+            document.querySelector('.link').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
